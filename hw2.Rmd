@@ -5,9 +5,33 @@ date: "9/7/2020"
 output: pdf_document
 ---
 
-```{r setup, include=FALSE}
-devtools::install_github("hadley/adv-r")
+```{r message=FALSE, warning=FALSE}
+devtools::install_github("hadley/adv-r", force = TRUE)
+
 ```
 
-## R Markdown
+## Error1
+Error: Failed to install 'advr' from GitHub: \newline
+  Failed to install 'rlang' from GitHub: \newline
+  Could not find tools necessary to compile a package \newline
+Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem. \newline
+
+Solution: the tool is automatically installed. After installing, rerun the code.
+
+```{r message=FALSE, warning=FALSE}
+bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
+
+```
+
+## Error2
+Quitting from lines 9-10 (_main.Rmd)  \newline
+Error in if (options\$engine != "R") options\$cache = (options\$cache > 0) *  : \newline
+  argument is of length zero \newline
+
+Please delete _main.Rmd after you finish debugging the error. \newline
+
+Solution: 
+
+
+
 
