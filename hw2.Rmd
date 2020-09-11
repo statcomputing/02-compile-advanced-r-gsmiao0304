@@ -6,11 +6,12 @@ output: pdf_document
 ---
 
 
+Reference: https://brettklamer.com/diversions/statistical/compile-hadleys-advanced-r-programming-to-a-pdf/
+
 ## Error1
 Error: Failed to install 'advr' from GitHub: \newline
   Failed to install 'rlang' from GitHub: \newline
   Could not find tools necessary to compile a package \newline
-Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem. \newline
 
 Solution: the tool is automatically installed. After installing, rerun the code.
 
@@ -48,3 +49,34 @@ Error in (function (cond)  :  \newline
   error in evaluating the argument 'drv' in selecting a method for function 'dbConnect': there is no package called 'RSQLite' \newline
   
 Solution: install package ‘RSQLite’.
+
+## Error7
+Quitting from lines 38-40 (Perf-measure.Rmd)  \newline
+Error in library(profvis) : there is no package called 'profvis' \newline
+
+Solution: install package ‘profvis’.
+
+## Error8
+Quitting from lines 38-40 (Perf-measure.Rmd) \newline
+Error in library(bench) : there is no package called 'bench' \newline
+
+Solution: install package ‘bench’.
+
+## Error8
+Quitting from lines 233-234 (Perf-measure.Rmd)  \newline
+Error: `ggbeeswarm` must be installed to use `type = "beeswarm"` option. \newline
+
+Solution: install package ‘ggbeeswarm’.
+
+## Error9
+! fontspec error: "font-not-found" \newline
+!  \newline
+! The font "Inconsolata" cannot be found. \newline
+
+Solution: install package ‘extrafont’. Download "Inconsolata" from Google Font and put it in the font library.
+
+## Error10
+! LaTeX Error: Environment sidebar undefined. \newline
+
+Error: LaTeX failed to compile _main.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See _main.log for more info. \newline
+
