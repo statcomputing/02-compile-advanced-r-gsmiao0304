@@ -5,9 +5,13 @@ date: "9/7/2020"
 output: pdf_document
 ---
 
-```{r message=FALSE, warning=FALSE}
-devtools::install_github("hadley/adv-r", force = TRUE)
 
+```{r message=FALSE, warning=FALSE}
+
+devtools::install_github("hadley/adv-r")
+# devtools::install_github("hadley/sloop")
+# devtools::install_github("hadley/emo")
+bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
 ```
 
 ## Error1
@@ -19,7 +23,7 @@ Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem. \newli
 Solution: the tool is automatically installed. After installing, rerun the code.
 
 ```{r message=FALSE, warning=FALSE}
-bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
+extrafont::font_import(pattern = "Inconsolata")
 
 ```
 
@@ -30,7 +34,7 @@ Error in if (options\$engine != "R") options\$cache = (options\$cache > 0) *  : 
 
 Please delete _main.Rmd after you finish debugging the error. \newline
 
-Solution: 
+Solution: delete chunck option "r setup".
 
 
 
