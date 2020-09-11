@@ -33,3 +33,10 @@ Error in loadNamespace(name) : there is no package called ‘bookdown’  \newli
 
 Solution: install package ‘bookdown’.
 
+## Error5
+
+Quitting from lines 80-81 (Names-values.Rmd) \newline
+Error in library(lobstr) : there is no package called 'lobstr' \newline
+Calls: local ... withCallingHandlers -> withVisible -> eval -> eval -> library \newline
+
+Solution: install package ‘lobstr’.
