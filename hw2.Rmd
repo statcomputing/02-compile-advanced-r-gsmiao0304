@@ -6,14 +6,6 @@ output: pdf_document
 ---
 
 
-```{r message=FALSE, warning=FALSE}
-
-devtools::install_github("hadley/adv-r")
-# devtools::install_github("hadley/sloop")
-# devtools::install_github("hadley/emo")
-bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
-```
-
 ## Error1
 Error: Failed to install 'advr' from GitHub: \newline
   Failed to install 'rlang' from GitHub: \newline
@@ -22,20 +14,22 @@ Call `pkgbuild::check_build_tools(debug = TRUE)` to diagnose the problem. \newli
 
 Solution: the tool is automatically installed. After installing, rerun the code.
 
-```{r message=FALSE, warning=FALSE}
-extrafont::font_import(pattern = "Inconsolata")
-
-```
-
 ## Error2
-Quitting from lines 9-10 (_main.Rmd)  \newline
-Error in if (options\$engine != "R") options\$cache = (options\$cache > 0) *  : \newline
-  argument is of length zero \newline
 
-Please delete _main.Rmd after you finish debugging the error. \newline
+Error: .onLoad failed in loadNamespace() for 'pkgload', details: \newline
+  call: loadNamespace(name) \newline
+  error: there is no package called ‘desc’ \newline
 
-Solution: delete chunck option "r setup".
+Solution: install package ‘desc’.
 
+## Error3
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : \newline
+  there is no package called ‘sessioninfo’ \newline
 
+Solution: install package ‘sessioninfo’.
 
+## Error4
+Error in loadNamespace(name) : there is no package called ‘bookdown’  \newline
+
+Solution: install package ‘bookdown’.
 
