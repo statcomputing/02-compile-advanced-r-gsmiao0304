@@ -73,10 +73,12 @@ Solution: install package ‘ggbeeswarm’.
 !  \newline
 ! The font "Inconsolata" cannot be found. \newline
 
-Solution: install package ‘extrafont’. Download "Inconsolata" from Google Font and put it in the font library.
+Solution: install package ‘extrafont’. Download "Inconsolata" from Google Font and put the font file in the font library.
 
 ## Error10
 ! LaTeX Error: Environment sidebar undefined. \newline
 
 Error: LaTeX failed to compile _main.tex. See https://yihui.org/tinytex/r/#debugging for debugging tips. See _main.log for more info. \newline
+
+Solution: install tinytex. 
 
