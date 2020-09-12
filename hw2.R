@@ -14,7 +14,7 @@ library(extrafont)
 library(bookdown)
 devtools::install_deps()
 
-extrafont::font_import(pattern = "Inconsolata")
+extrafont::font_import(pattern = "Inconsolata", prompt = FALSE)
 bookdown::render_book("index.Rmd", output_format = "bookdown::pdf_book")
 
 install.packages("bookdown")
